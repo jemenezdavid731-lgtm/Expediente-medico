@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente Médico - SaludFácil</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            display: flex;
+            justify-content: center;
+            padding: 20px 10px;
+        }
+        .card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            padding: 24px;
+            color: #333;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        .profile-img {
+            width: 75px;
+            height: 75px;
+            border-radius: 12px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+        .header-info h2 {
+            font-size: 18px;
+            color: #1e293b;
+            font-weight: 700;
+        }
+        .header-info h1 {
+            font-size: 20px;
+            color: #1d4ed8;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+        .header-info p {
+            font-size: 12px;
+            color: #64748b;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #dcfce7;
+            color: #166534;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 12px;
+            margin-top: 6px;
+        }
+        .section-title {
+            color: #1d4ed8;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 20px 0 12px 0;
+        }
+        .divider {
+            border-bottom: 1px solid #e2e8f0;
+            margin: 15px 0;
+        }
+        .field {
+            margin-bottom: 14px;
+        }
+        .field-label {
+            font-size: 13px;
+            color: #64748b;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 2px;
+        }
+        .field-value {
+            font-size: 15px;
+            color: #0f172a;
+            font-weight: 700;
+        }
+        .footer-box {
+            background-color: #eff6ff;
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #1e40af;
+        }
+        .footer-box strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+        .disclaimer {
+            font-size: 10px;
+            color: #94a3b8;
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <!-- Encabezado con imagen -->
+    <div class="header">
+        <img src="foto.jpg" alt="Foto Paciente" class="profile-img">
+        <div class="header-info">
+            <h2>Expediente médico</h2>
+            <h1>Carlos Mendoza</h1>
+            <p>Identificación de emergencia • SaludFácil</p>
+            <span class="badge">Información médica</span>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Datos Personales -->
+    <div class="section-title">Datos personales</div>
+    
+    <div class="field">
+        <div class="field-label">👤 Nombre completo</div>
+        <div class="field-value">Carlos Eduardo Mendoza Cruz</div>
+    </div>
+    
+    <div class="field">
+        <div class="field-label">📞 Teléfono</div>
+        <div class="field-value">+52 443 123 4567</div>
+    </div>
+    
+    <div class="field">
+        <div class="field-label">✉️ Correo electrónico</div>
+        <div class="field-value">carlos.mendoza@email.com</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Información de Salud -->
+    <div class="section-title">Información de salud</div>
+    
+    <div class="field">
+        <div class="field-label">🩸 Tipo de sangre</div>
+        <div class="field-value" style="color: #1d4ed8; font-size: 18px;">O positivo (O+)</div>
+    </div>
+    
+    <div class="field">
+        <div class="field-label">⚠️ Alergias</div>
+        <div class="field-value" style="color: #dc2626;">Penicilina</div>
+    </div>
+    
+    <div class="field">
+        <div class="field-label">💙 Enfermedades o padecimientos</div>
+        <div class="field-value">Hipertensión</div>
+    </div>
+    
+    <div class="field">
+        <div class="field-label">💊 Medicamentos actuales</div>
+        <div class="field-value">Enalapril 10 mg</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Contacto de Emergencia -->
+    <div class="section-title">Contacto de emergencia</div>
+    
+    <div class="field">
+        <div class="field-label">🪪 Familiar responsable</div>
+        <div class="field-value">María Mendoza (Hermana)</div>
+        <div class="field-value" style="font-weight: normal; font-size: 14px; margin-top: 2px;">+52 443 987 6543</div>
+    </div>
+
+    <div class="footer-box">
+        <strong>☑ SaludFácil • Atención de emergencia</strong>
+        Información organizada para facilitar la atención inicial. Verificar los datos con el paciente o su responsable.
+    </div>
+
+    <div class="disclaimer">
+        Ejemplo ilustrativo. Los datos médicos mostrados son ficticios.
+    </div>
+</div>
+
+</body>
+</html>
